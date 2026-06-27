@@ -24,16 +24,13 @@ Globalmed's internal audits revealed that sensitive patient data was globally ac
 
 ### 1. Data Architecture & Security
 The core infrastructure was built to ensure PII (SSN, Email, Credit Card) remained obfuscated from unauthorized internal roles.
+
 <img width="1659" height="727" alt="Orginal screenshot" src="https://github.com/user-attachments/assets/90e406eb-0fd2-494d-8277-77dbb5c6fede" />
 
+<img width="1658" height="806" alt="Data Analyst Screenshot" src="https://github.com/user-attachments/assets/3d1e766d-dc92-4775-85d1-5cca1ad378b3" />
 
+<img width="1656" height="766" alt="CCO Screenshot" src="https://github.com/user-attachments/assets/4fc3d724-a83a-4664-ae1e-466d2724365a" />
 
-### 2. Executive Compliance Dashboard
-Designed to bridge the gap between back-end data engineering and executive decision-making. This dashboard provides a real-time view of data risk tiers.
-
-`[INSERT SCREENSHOT OF YOUR POWER BI DASHBOARD HERE]`
-
----
 
 ## Implementation Details & Source Code
 The following SQL script demonstrates the core logic used to instantiate the secure data environment, apply dynamic data masking to sensitive PII, and enforce least-privilege access via RBAC.
