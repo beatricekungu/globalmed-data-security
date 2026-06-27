@@ -20,16 +20,21 @@ Globalmed's internal audits revealed that sensitive patient data was globally ac
 
 ---
 
-## Project Artifacts
+## Project Artifact
+### Data Architecture & Security Validation
+To validate the Role-Based Access Control (RBAC) and Dynamic Data Masking (DDM) policies within Azure SQL, the database was queried under three distinct security contexts.
 
-### 1. Data Architecture & Security
-The core infrastructure was built to ensure PII (SSN, Email, Credit Card) remained obfuscated from unauthorized internal roles.
+**Baseline: Database Owner View**
+The system administrator (or DB Owner) retains full visibility into the raw data prior to applying restrictive roles. 
+![Database Owner View](Orginal%20screenshot.png)
 
-<img width="1659" height="727" alt="Orginal screenshot" src="https://github.com/user-attachments/assets/90e406eb-0fd2-494d-8277-77dbb5c6fede" />
+**Restricted: Data Analyst View**
+When querying the database as the `DataAnalyst` role, the masking functions are automatically applied to the Email, SSN, and Credit Card columns. This allows the analyst to perform necessary operational aggregations (e.g., counting patients by region or risk tier) without ever exposing raw PII.
+![Data Analyst View](Data%20Analyst%20Screenshot.png)
 
-<img width="1658" height="806" alt="Data Analyst Screenshot" src="https://github.com/user-attachments/assets/3d1e766d-dc92-4775-85d1-5cca1ad378b3" />
-
-<img width="1656" height="766" alt="CCO Screenshot" src="https://github.com/user-attachments/assets/4fc3d724-a83a-4664-ae1e-466d2724365a" />
+**Privileged: Chief Compliance Officer (CCO) View**
+Because the `ChiefComplianceOfficer` role was granted explicit `UNMASK` permissions in the architecture, they retain the ability to view the underlying sensitive data required for high-level audits and compliance investigations.
+![Chief Compliance Officer View](CCO%20Screenshot.png)
 
 
 ## Implementation Details & Source Code
