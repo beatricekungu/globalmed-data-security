@@ -1,3 +1,10 @@
+### 📊 Executive Presentation
+For a high-level overview of the business problem, the Zero-Trust architectural solution, and the resulting enterprise ROI, please review the executive slide deck:
+
+[![View Executive Deck](https://img.shields.io/badge/View_Executive_Deck-8B0000?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](https://github.com/beatricekungu/globalmed-data-security/blob/main/Assets/Deck%20for%20Project.pdf)
+
+---
+
 # Globalmed Project: Privacy & Compliance Architecture
 
 *Disclaimer: This project was developed for educational and professional portfolio demonstration purposes only. All data used is synthetic and does not reflect actual patient records or the infrastructure of a real healthcare entity. It serves to showcase competency in data governance, GRC frameworks, and secure architectural design.*
@@ -49,7 +56,6 @@ Because the `ChiefComplianceOfficer` role was granted explicit UNMASK permission
 
 [![View Chief Compliance Officer](https://img.shields.io/badge/View_Chief_Compliance_Officer-001F3F?style=for-the-badge)](https://github.com/beatricekungu/zero-trust-data-governance/blob/main/Assets/CCO%20Screenshot.png)
 
-[![View Executive Deck](https://img.shields.io/badge/View_Executive_Deck-2C3E50?style=for-the-badge)](https://github.com/beatricekungu/globalmed-data-security/blob/main/Assets/Deck%20for%20Project.pdf)
 ---
 
 ## Implementation Details & Source Code
