@@ -11,12 +11,10 @@ Globalmed's internal audits revealed that sensitive patient data was globally ac
 ## Key Competencies
 * **Data Governance:** Implemented SQL-based Dynamic Data Masking (DDM) to protect sensitive PII without impacting operational utility.
 * **Security Engineering:** Built a granular Role-Based Access Control (RBAC) model to enforce least-privilege access.
-* **Executive Reporting:** Visualized risk exposure and compliance posture for C-suite stakeholders via an integrated Power BI compliance dashboard.
 
 ## Technical Stack
 * **Database:** Azure SQL
 * **Security:** Dynamic Data Masking, RBAC, NIST 800-53 Mapping
-* **Visualization:** Power BI (Compliance/Risk Monitoring)
 
 ---
 
